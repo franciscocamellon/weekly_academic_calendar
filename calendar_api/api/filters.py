@@ -1,7 +1,5 @@
-from rest_framework import generics
 from django_filters import rest_framework as filters
-import django_filters
-from django_filters.widgets import DateRangeWidget
+
 from calendar_api import models
 
 

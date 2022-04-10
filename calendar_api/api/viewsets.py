@@ -1,9 +1,9 @@
-from rest_framework import generics
 from django_filters import rest_framework as filters
 from rest_framework import viewsets
-from calendar_api.api import serializers
+
 from calendar_api import models
-from calendar_api.api.filters import AcademicDayFilter, AcademicWeekFilter
+from calendar_api.api import serializers
+from calendar_api.api.filters import AcademicDayFilter
 
 
 class WeeklyAcademicCalendarViewSet(viewsets.ModelViewSet):
