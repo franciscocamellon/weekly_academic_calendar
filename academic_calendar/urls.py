@@ -21,6 +21,7 @@ from calendar_api.api import viewsets as weeklyviewsets
 
 route = routers.DefaultRouter()
 route.register(r'weeks', weeklyviewsets.WeeklyAcademicCalendarViewSet, basename="Weeks")
+route.register(r'days', weeklyviewsets.AcademicDayViewSet, basename="Days")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
